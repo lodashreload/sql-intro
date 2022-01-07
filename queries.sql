@@ -28,3 +28,33 @@ INSERT INTO "Employee" ("FullName",  "Salary", "JobPosition", "PhoneExtention", 
 VALUES ('Mama', 100000, 'QA', 2, TRUE);
 INSERT INTO "Employee" ("FullName",  "Salary", "JobPosition", "PhoneExtention", "IsPartTime")
 VALUES ('Danny TwoChins', 10000, 'Enforcer', 2, TRUE);
+
+SELECT
+  "FullName",
+  "PhoneExtention"
+From
+  "Employee"
+where
+  "IsPartTime" = True;
+
+  INSERT INTO
+  "Employee" (
+    "FullName",
+    "Salary",
+    "JobPosition",
+    "PhoneExtention",
+    "IsPartTime"
+  )
+VALUES
+  ('Vinnie Glasses', 450, 'Software Engineer', 2, TRUE);
+
+  INSERT INTO
+  "Employee" (
+    "FullName",
+    "Salary",
+    "JobPosition",
+    "PhoneExtention",
+    "IsPartTime"
+  )
+VALUES
+  ('Henry Spices', 450, 'Cook', 2, False);
