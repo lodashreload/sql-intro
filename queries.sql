@@ -58,3 +58,7 @@ VALUES
   )
 VALUES
   ('Henry Spices', 450, 'Cook', 2, False);
+
+  UPDATE "Employee"
+SET "Salary" = 500
+WHERE "JobPosition" = 'Cook';
