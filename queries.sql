@@ -62,3 +62,5 @@ VALUES
   UPDATE "Employee"
 SET "Salary" = 500
 WHERE "JobPosition" = 'Cook';
+
+ALTER TABLE "Employee" ADD COLUMN "ParkingSpot" TEXT;
