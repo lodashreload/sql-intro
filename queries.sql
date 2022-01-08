@@ -4,6 +4,7 @@ CREATE TABLE "Employee" (
   "JobPosition"  TEXT,
   "PhoneExtention"     INT,
   "IsPartTime" BOOLEAN
+  "Id#" int primary key
 );
 
 SELECT "FullName" FROM "Employee"
