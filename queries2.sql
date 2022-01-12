@@ -63,3 +63,32 @@ VALUES ('X529', '2020-07-04 15:45:12' , 'person@example.com');
   "OrderId#" INTEGER REFERENCES "Orders" ("Id"),
   "Id" SERIAL PRIMARY KEY
   );
+
+  SELECT *
+  FROM "Employees" 
+  JOIN "Departments" ON "Employees"."DepartmentId" = "Departments"."Id"
+  WHERE "Departments"."BuildingLocation" = 'North';
+
+    SELECT *
+  FROM "Employees" 
+  JOIN "Departments" ON "Employees"."DepartmentId" = "Departments"."Id"
+  WHERE "Departments"."BuildingLocation" = 'NorthSide';
+
+    SELECT *
+  FROM "Employees" 
+  JOIN "Departments" ON "Employees"."DepartmentId" = "Departments"."Id"
+  WHERE "Departments"."BuildingLocation" = 'NorthSide';
+
+SELECT *
+FROM "Orders"
+JOIN "ProductOrders" ON "ProductOrders"."OrderId#" = "Orders"."Id"
+JOIN "Products" ON "Products"."Id" = "ProductOrders"."ProductId#"
+WHERE "ProductOrders"."ProductId#" = 2;
+
+SELECT *
+FROM "Orders"
+JOIN "ProductOrders" ON "ProductOrders"."OrderId#" = "Orders"."Id"
+JOIN "Products" ON "Products"."Id" = "ProductOrders"."ProductId#"
+WHERE "Orders"."OrderNumber" = 'X529' AND "Products"."ProductName" = 'Flowbee';
+
+
